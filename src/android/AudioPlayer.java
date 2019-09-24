@@ -153,8 +153,8 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
             this.audioFile = file;
             this.recorder = new MediaRecorder();
             this.recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-            this.recorder.setOutputFormat(MediaRecorder.OutputFormat.WEBM);
-            this.recorder.setAudioEncoder(MediaRecorder.AudioEncoder.VORBIS);
+            this.recorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
+            this.recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
             this.tempFile = generateTempFile();
             this.recorder.setOutputFile(this.tempFile);
             try {
